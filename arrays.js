@@ -1,12 +1,25 @@
-//Ejercicio1
-var arr = [4,4,5,12];
-var cambia = 9;
+var assert = require("assert");
 
-var multiplicacion = arr.reduce(function(op1,op2){
-  var multi =  op1 * op2 ;
-return multi;
-});
-console.log(multiplicacion*cambia);
+//Ejercicio1
+
+function multiplicar(arr, numero){
+  var total =0;
+  if(Array.isArray(arr)){
+      total = arr.reduce(function(op1, op2){
+         return op1 * op2;
+      });
+  }
+  else{
+    if(!isNaN(arr)){
+      total = arr;
+    }
+  }
+
+  if(!isNaN(numero)){
+    total = numero*total;
+  }
+  return total;
+}
 
 
 
@@ -54,7 +67,6 @@ console.log (convertir(celcius));
 
 //Ejercicio6
 var arr = [1,2,3,4];
-
 var multiplicacion = arr.reduce(function(op1,op2){
   var multi =  op1 * op2 ;
 return multi;
