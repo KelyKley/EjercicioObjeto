@@ -12,8 +12,8 @@ function Persona(nombre, edad, pasatiempo){
   }
  var Respuesta = new Persona ("Kely", 18, "cantar");
 //*Prueba Unitaria*
-describe("Ejercicio1", function(){
-  it("Prueba de 10 y 20", function(){
+describe("Ejercicio 1", function(){
+  it("Presentacion", function(){
     assert.equal ("Hola soy Kely tengo 18 años y me gusta cantar", Persona("Kely", 18, "cantar"));
       });
 
@@ -29,8 +29,8 @@ function Area (base, altura){
 }
 var Respuesta = new Area(10,20);
 //*Prueba Unitaria*
-  describe("Ejercicio2", function(){
-    it("Prueba de Kely", function(){
+  describe("Ejercicio 2", function(){
+    it("Area de un rectangulo", function(){
       assert.equal (200, Area(10, 20));
         });
   });
@@ -50,7 +50,7 @@ function datos(nombre, dia, mes, anio, anioActual) {
   };
  var Respuesta = new datos("kely", 3, "setiembre", 1998, 2017);
 //*Prueba Unitaria*
- describe("Ejercicio3", function(){
-   it("Prueba de Kely edad", function(){
+ describe("Ejercicio 3", function(){
+   it("Prueba de edad", function(){
      assert.equal ("La edad actual de Kely es 19.", datos("kely", 3, "setiembre", 1998, 2017));
        });
