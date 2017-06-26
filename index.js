@@ -1,5 +1,6 @@
 var assert = require("assert");
-//Ejercicio 1 VIERNES
+
+//Ejercicio 1
 function Persona(nombre, edad, pasatiempo){
   this.nombre = nombre;
   this.edad = edad;
@@ -10,7 +11,7 @@ function Persona(nombre, edad, pasatiempo){
 
   }
  var Respuesta = new Persona ("Kely", 18, "cantar");
-
+//*Prueba Unitaria*
 describe("Ejercicio1", function(){
   it("Prueba de 10 y 20", function(){
     assert.equal ("Hola soy Kely tengo 18 años y me gusta cantar", Persona("Kely", 18, "cantar"));
@@ -18,8 +19,7 @@ describe("Ejercicio1", function(){
 
 
 
-//Ejercicio 2 VIERNES
-//var rectangulo = new Object();
+//Ejercicio 2
 function Area (base, altura){
   this.base = base;
   this.altura = altura;
@@ -28,7 +28,7 @@ function Area (base, altura){
   }
 }
 var Respuesta = new Area(10,20);
-
+//*Prueba Unitaria*
   describe("Ejercicio2", function(){
     it("Prueba de Kely", function(){
       assert.equal (200, Area(10, 20));
@@ -37,7 +37,7 @@ var Respuesta = new Area(10,20);
 
 
 
-//Ejercicio 3 VIERNES
+//Ejercicio 3
 function datos(nombre, dia, mes, anio, anioActual) {
   this.anioActual = anioActual;
   this.nombre = nombre;
@@ -49,7 +49,7 @@ function datos(nombre, dia, mes, anio, anioActual) {
     }
   };
  var Respuesta = new datos("kely", 3, "setiembre", 1998, 2017);
-
+//*Prueba Unitaria*
  describe("Ejercicio3", function(){
    it("Prueba de Kely edad", function(){
      assert.equal ("La edad actual de Kely es 19.", datos("kely", 3, "setiembre", 1998, 2017));
