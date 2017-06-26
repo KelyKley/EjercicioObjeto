@@ -89,7 +89,7 @@ describe("Ejercicio 5", function(){
 });
 
 
-//Ejercicio6
+//Ejercicio 6
 function multiplicar (arr){
     var multiplicacion = arr.reduce(function(op1, op2){
       return op1 * op2;
@@ -105,4 +105,4 @@ describe("Ejercicio 6", function(){
 
 
 
-//Ejercicio7
+//Ejercicio 7
